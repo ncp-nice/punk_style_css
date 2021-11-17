@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Set off paper button effects</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_button.css">
+
+
+
+</head>
+<body>
+<div id="mydiv">
+    <nav>
+        <ul>
+            <a onclick="hid()">
+                <li>Login</li>
+            </a>
+            <a onclick="register()">
+                <li>Register / Forget</li>
+            </a>
+
+            <a href="./../0001-button-text-staggered-sliding-effects/index.html">
+                <li>Exit</li>
+            </a>
+            <a onclick="occ()">
+                <li>More Information</li>
+            </a>
+
+        </ul>
+    </nav>
+</div>
+
+<div id="mydiv2" style="display: none">
+    <section class="buttons buttons_inset">
+    <nav>
+        <ul>
+            <li>邮箱   <input class="myInput" type="text" ></li>
+            <li>密码  <input class="myInput"  type="password"></li>
+
+
+          <li><button class="button button_top">登录</button>&nbsp;&nbsp;&nbsp; <button onclick="dis()" class="button button_bottom">取消</button></li>
+
+
+
+        </ul>
+    </nav>
+
+    </section>
+</div>
+<div id="mydiv3" style="display: none">
+    <section class="buttons buttons_inset">
+        <nav>
+            <ul>
+               <p class="ps">此工程仅由本人一人完成,问题请联系:<br><br>&nbsp;&nbsp;&nbsp;QQ:&nbsp;1577469388<br>&nbsp;&nbsp;&nbsp;WX: yourchengshao</p>
+
+                <button class="button button_tb" onclick="dis()">返回</button>
+
+
+            </ul>
+        </nav>
+
+    </section>
+</div>
+
+<div id="register" style="display: none">
+    <section class="buttons buttons_inset">
+        <nav>
+            <ul>
+                <br><br>
+                <li>邮箱   <input class="myInput" type="text" ></li>
+
+
+                <li><button class="button button_left">确认</button>&nbsp;&nbsp;&nbsp; <button onclick="registerTurn()" class="button button_right">返回</button></li>
+
+
+            </ul>
+        </nav>
+
+    </section>
+</div>
+<script>
+    function hid() {
+        document.getElementById('mydiv').style.display = 'none';
+        document.getElementById('mydiv2').style.display = 'block';
+        document.getElementById('mydiv3').style.display = 'none';
+    }
+    function dis() {
+      document.getElementById('mydiv').style.display = 'block';
+      document.getElementById('mydiv2').style.display = 'none';
+        document.getElementById('mydiv3').style.display = 'none';
+    }
+    function occ()
+    {
+        document.getElementById('mydiv').style.display = 'none';
+        document.getElementById('mydiv2').style.display = 'none';
+        document.getElementById('mydiv3').style.display = 'block';
+
+    }
+    function register()
+    {
+        document.getElementById('mydiv').style.display = 'none';
+        document.getElementById('mydiv2').style.display = 'none';
+        document.getElementById('mydiv3').style.display = 'none';
+        document.getElementById('register').style.display = 'block';
+    }
+    function registerTurn()
+    {
+        document.getElementById('mydiv').style.display = 'block';
+        document.getElementById('mydiv2').style.display = 'none';
+        document.getElementById('mydiv3').style.display = 'none';
+        document.getElementById('register').style.display = 'none';
+    }
+
+
+</script>
+
+</body>
+</html>
